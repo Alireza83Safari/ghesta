@@ -1,0 +1,72 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.cta {
+  background: url("/images/bg.svg") no-repeat top;
+  background-size: 100% 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80%;
+  padding: 0 20px;
+
+  @media screen and (min-width: $md-breakpoint) {
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-image {
+    @media screen and (min-width: $xxl-breakpoint) {
+      margin-right: 100px;
+    }
+    img {
+      @media screen and (max-width: $md-breakpoint) {
+        width: 80vw;
+      }
+    }
+  }
+
+  .cta-text {
+    max-width: 520px;
+
+    @media screen and (max-width: $lg-breakpoint) {
+      margin-top: 30px;
+    }
+    .cta-title {
+      font-size: 24px;
+      font-weight: 800;
+      white-space: wrap;
+      max-width: 100vw;
+    }
+
+    .cta-description {
+      margin: 25px 0;
+      font-size: 16px;
+      line-height: 30px;
+      max-width: 100vw;
+      white-space: wrap;
+    }
+
+    .cta-buttons {
+      display: flex;
+      @media screen and (max-width: $xs-breakpoint) {
+        flex-direction: column;
+        gap: 20px 0;
+      }
+      .register-loan-btn {
+        margin-left: 20px;
+        @include btn($blue, white);
+      }
+
+      .calculate-loan-btn {
+        @include btn(transparent, $blue);
+      }
+    }
+  }
+}

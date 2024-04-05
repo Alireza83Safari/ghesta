@@ -3,6 +3,7 @@ export default async function Layout(props: {
   services: React.ReactNode;
   features: React.ReactNode;
   steps: React.ReactNode;
+  cta: React.ReactNode;
 }) {
   return (
     <>
@@ -10,6 +11,7 @@ export default async function Layout(props: {
       {props.services}
       {props.features}
       {props.steps}
+      {props.cta}
     </>
   );
 }
