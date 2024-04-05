@@ -1,0 +1,27 @@
+@import "../styles/variables.scss";
+
+@font-face {
+  font-family: "pelak";
+  src: url("/fonts/PelakFA-Regular.ttf");
+}
+
+:root {
+  font-family: "pelak";
+  background-color: $bg-color;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}

@@ -1,0 +1,68 @@
+@import "./variables.scss";
+
+@mixin container {
+  margin: 0 auto;
+
+  @media screen and (max-width: $sm-breakpoint) {
+    padding: 0 24px;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: 71vw;
+  }
+
+  @media screen and (min-width: $xl-breakpoint) {
+    max-width: 70vw;
+  }
+
+  @media screen and (min-width: $xxl-breakpoint) {
+    max-width: 63vw;
+  }
+}
+
+@mixin btn($bg-color, $text-color) {
+  .btn {
+    position: relative;
+    background: $bg-color;
+    width: 166px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+
+    .btn-link {
+      display: flex;
+      align-items: center;
+      color: $text-color;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 30px;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        border: 2px solid black;
+        width: 163px;
+        height: 62px;
+        border-radius: 24px;
+      }
+    }
+  }
+}
+
+@mixin title {
+  .title {
+    margin-top: 27px;
+    font-size: 31px;
+    font-weight: 800;
+    color: #00569f;
+    background-image: url("/images/titr2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 4rem;
+    z-index: 3;
+  }
+}
