@@ -1,0 +1,185 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.header {
+  padding: 1.563rem 0;
+  //box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 0 0 20px 20px;
+
+  @media screen and (min-width: $md-breakpoint) {
+    padding: 1rem 0;
+  }
+
+  .header-container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $sm-breakpoint) {
+      padding: 0 29px;
+    }
+    @media screen and (min-width: $md-breakpoint) {
+      justify-content: space-around;
+      padding: 0 0;
+    }
+    @media screen and (min-width: $lg-breakpoint) {
+      justify-content: space-between;
+      padding: 0 0;
+    }
+
+    .header-logo {
+      @media screen and (max-width: $sm-breakpoint) {
+        width: 96px;
+        height: 48px;
+        object-fit: contain;
+      }
+    }
+
+    .left-menu {
+      display: flex;
+      align-items: center;
+
+      .header-menu {
+        .menu-hidden {
+          @media screen and (min-width: $md-breakpoint) {
+            display: none;
+          }
+          display: flex;
+        }
+
+        @media screen and (max-width: $md-breakpoint) {
+          position: fixed;
+          top: 70px;
+          right: 0;
+          left: 0;
+          background: white;
+          border-radius: 0 0 20px 20px;
+          display: flex;
+          align-items: center;
+          padding: 30px 15px;
+        }
+
+        .header-menu__item {
+          position: relative;
+          padding-left: 28px;
+
+          .header-menu__link {
+            text-decoration: none;
+            color: black;
+
+            @media screen and (max-width: $md-breakpoint) {
+              display: block;
+            }
+
+            @media screen and (min-width: $md-breakpoint) {
+              display: flex;
+              align-items: center;
+            }
+
+            span {
+              @media screen and (min-width: $md-breakpoint) {
+                font-size: 16px;
+                font-weight: 600;
+              }
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+
+          &:hover .submenu {
+            display: block;
+          }
+          .submenu {
+            position: absolute;
+            top: 20px;
+            display: none;
+            background-color: white;
+            width: 100%;
+            border-radius: 12px;
+            padding-top: 20px;
+
+            .submenu-link {
+              padding: 1.4rem 0;
+              font-size: 16px;
+              font-weight: 600;
+              display: block;
+              text-decoration: none;
+              padding: 15px;
+              color: black;
+
+              &:hover {
+                background-color: #f0f0f0dd;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: $md-breakpoint) {
+        @include btn($blue, white);
+      }
+
+      @media screen and (max-width: $md-breakpoint) {
+        .btn {
+          position: relative;
+          display: flex;
+          width: 48px;
+          height: 48px;
+          align-items: center;
+          justify-content: center;
+          background: $blue;
+          border-radius: 16px;
+
+          .btn-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 30px;
+
+            .user-svg {
+              @media screen and (max-width: $md-breakpoint) {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 7px;
+                margin-right: 7px;
+              }
+            }
+
+            span {
+              @media screen and (max-width: $md-breakpoint) {
+                display: none;
+              }
+            }
+
+            &::before {
+              content: " ";
+              position: absolute;
+              bottom: 4px;
+              right: 4px;
+              border: 2px solid black;
+              width: 45px;
+              height: 45px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-icon {
+      @media screen and (min-width: $md-breakpoint) {
+        display: none;
+      }
+      margin-left: 6px;
+      margin-right: 16px;
+    }
+  }
+}

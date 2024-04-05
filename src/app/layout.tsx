@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import "@/styles/reset.scss";
+import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "قسطا",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body>
+        <Header />
         <main>{children}</main>
       </body>
     </html>
