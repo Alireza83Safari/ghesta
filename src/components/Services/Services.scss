@@ -1,0 +1,92 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.services {
+  margin: 40px 0;
+  background: url("/images/Feature_dots.svg"),
+    linear-gradient(
+      90.05deg,
+      #d5e2ea 0.04%,
+      #e2ebf0 5.25%,
+      #f7f7f7 44.28%,
+      #ecf2f5 60.94%,
+      #e2ebf0 93.32%,
+      #d5e2ea 99.97%
+    );
+  height: 164px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media screen and (max-width: $md-breakpoint) {
+    height: 284px;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-image: url("/images/Feature_befor.svg");
+    background-size: cover;
+    width: 6%;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-image: url("/images/Feature_after.svg");
+    background-size: cover;
+    background-position: center;
+    width: 6%;
+  }
+
+  .services-container {
+    margin: auto;
+    width: 100%;
+    display: grid;
+
+    @media screen and (min-width: $md-breakpoint) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media screen and (min-width: 1200px) {
+      @include container;
+    }
+
+    .services-item {
+      grid-column: span 1 / span 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .services-image {
+        @media screen and (max-width: $md-breakpoint) {
+          width: 64px !important;
+          height: 47px !important;
+          margin: 12px 0;
+        }
+      }
+
+      .services-text {
+        margin-right: 12px;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 800;
+        color: #00569f;
+
+        br {
+          @media screen and (max-width: $md-breakpoint) {
+            display: none;
+          }
+        }
+
+        span {
+          color: $green;
+        }
+      }
+    }
+  }
+}
