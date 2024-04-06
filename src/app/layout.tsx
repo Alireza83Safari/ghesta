@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 import "./globals.scss";
 import "@/styles/reset.scss";
-import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "قسطا",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

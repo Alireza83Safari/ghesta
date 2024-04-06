@@ -1,0 +1,135 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.footer {
+  margin-top: 100px;
+
+  .footer-container {
+    margin: auto;
+
+    @media screen and (max-width: $sm-breakpoint) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $sm-breakpoint) {
+      width: 540px;
+    }
+    @media screen and (min-width: $md-breakpoint) {
+      width: 720px;
+    }
+    @media screen and (min-width: 1000px) {
+      width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1140px;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 1300px;
+    }
+
+    .footer-main {
+      position: relative;
+      border-radius: 33px;
+      background-color: $bg-gray;
+      padding: 70px 40px;
+
+      .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 0 20px;
+        position: absolute;
+        top: -20px;
+        flex-wrap: wrap;
+        min-width: 100%;
+
+        @media screen and (max-width: 1200px) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .footer-social-item {
+          padding: 10px;
+          background-color: white;
+          border-radius: 100%;
+        }
+      }
+
+      .footer-top {
+        border-bottom: 2px solid #dddd;
+        padding-bottom: 22px;
+
+        @media screen and (min-width: $md-breakpoint) {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        @media screen and (max-width: 500px) {
+          padding-top: 70px;
+        }
+
+        .footer-links {
+          .footer-link {
+            color: #30357c;
+            display: inline-block !important;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 16px;
+            margin-bottom: 24px;
+            font-weight: 600;
+          }
+        }
+
+        .foooter-achievement {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+      }
+
+      .footer-bottom {
+        display: flex;
+        grid-column: span 2 / span 2;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        .footer-bottom-item {
+          display: flex;
+          align-items: center;
+
+          span {
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .footer-text {
+      h2 {
+        text-align: center;
+        font-weight: 600;
+      }
+      font-size: 14px;
+      margin: 30px 0;
+      line-height: 22px;
+      font-weight: 500;
+
+      .bold {
+        font-weight: 800;
+      }
+      .mt-20 {
+        margin-top: 20px;
+      }
+
+      p {
+        b {
+          font-weight: 800;
+        }
+
+        span {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
