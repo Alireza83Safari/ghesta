@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./Header.scss";
+import "./header.scss";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);

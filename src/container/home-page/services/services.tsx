@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./Services.scss";
+import "./services.scss";
 
 const Services = () => {
   return (

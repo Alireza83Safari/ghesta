@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./Cta.scss";
+import "./cta.scss";
 
 const Cta = () => {
   return (

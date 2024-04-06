@@ -1,5 +1,4 @@
-import React from "react";
-import Steps from "@/components/Steps/Steps";
+import Steps from "@/container/home-page/steps/steps";
 
 export default function page() {
   return <Steps />;

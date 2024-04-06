@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./Steps.scss";
+import "./steps.scss";
 
 const Steps = () => {
   return (
