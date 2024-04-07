@@ -20,11 +20,11 @@
   }
 }
 
-@mixin btn($bg-color, $text-color) {
+@mixin btn($bg-color, $text-color, $width) {
   .btn {
     position: relative;
     background: $bg-color;
-    width: 166px;
+    width: $width;
     height: 66px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
         bottom: 5px;
         right: 5px;
         border: 2px solid black;
-        width: 163px;
+        width: $width;
         height: 62px;
         border-radius: 24px;
       }

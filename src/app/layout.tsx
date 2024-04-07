@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
 import "./globals.scss";
 import "@/styles/reset.scss";
 
@@ -16,11 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

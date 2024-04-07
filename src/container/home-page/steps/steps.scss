@@ -46,7 +46,7 @@
       }
 
       div {
-        @include btn($green, black);
+        @include btn($green, black, 180px);
         display: flex;
         justify-content: center;
       }

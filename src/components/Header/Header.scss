@@ -123,7 +123,7 @@
       }
 
       @media screen and (min-width: $md-breakpoint) {
-        @include btn($blue, white);
+        @include btn($blue, white, 166px);
       }
 
       @media screen and (max-width: $md-breakpoint) {

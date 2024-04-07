@@ -61,11 +61,11 @@
       }
       .register-loan-btn {
         margin-left: 20px;
-        @include btn($blue, white);
+        @include btn($blue, white, 180px);
       }
 
       .calculate-loan-btn {
-        @include btn(transparent, $blue);
+        @include btn(transparent, $blue, 180px);
       }
     }
   }
