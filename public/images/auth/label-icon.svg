@@ -1,0 +1,17 @@
+   <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="8"
+      height="8"
+      fill="none"
+      className="whp-8"
+      viewBox="0 0 8 8"
+    >
+      <path
+        fill="#FF6F5E"
+        fillRule="evenodd"
+        stroke="#FF6F5E"
+        strokeWidth="1.5"
+        d="M3.341 1.39a.752.752 0 011.321 0l.583 1.066a.747.747 0 00.3.3l1.066.583a.752.752 0 010 1.321l-1.066.583a.747.747 0 00-.3.3l-.583 1.065a.752.752 0 01-1.32 0l-.584-1.066a.747.747 0 00-.3-.3L1.393 4.66a.752.752 0 010-1.321l1.065-.583a.747.747 0 00.3-.3l.583-1.065z"
+        clipRule="evenodd"
+      ></path>
+    </svg>

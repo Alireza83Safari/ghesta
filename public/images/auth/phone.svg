@@ -1,0 +1,25 @@
+ <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="none"
+      className="18"
+      viewBox="0 0 32 32"
+    >
+      <path
+        fillRule="evenodd"
+        stroke="#8B8B8B"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M21.333 28H10.667A2.666 2.666 0 018 25.333V6.667A2.666 2.666 0 0110.667 4h10.666A2.666 2.666 0 0124 6.667v18.666A2.666 2.666 0 0121.333 28z"
+        clipRule="evenodd"
+      ></path>
+      <path
+        stroke="#8B8B8B"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15.998 23a.333.333 0 10.003.666.333.333 0 00-.003-.666M14.333 8h3.333"
+      ></path>
+    </svg>

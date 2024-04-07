@@ -1,0 +1,18 @@
+   <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="none"
+      className="32"
+      viewBox="0 0 32 32"
+    >
+      <path
+        fillRule="evenodd"
+        stroke="#00569F"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M12.666 27.333v-6A3.333 3.333 0 0116 18v0a3.333 3.333 0 013.333 3.333v6h7.333V15.885c0-.707-.281-1.385-.781-1.885l-8.943-8.943a1.332 1.332 0 00-1.885 0L6.114 14c-.5.5-.781 1.178-.781 1.885v11.448h7.333z"
+        clipRule="evenodd"
+      ></path>
+    </svg>
